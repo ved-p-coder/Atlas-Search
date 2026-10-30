@@ -36,3 +36,6 @@ def test_extract_text_from_html():
     assert "Python Search" in text
     assert "Build an engine." in text
     assert "secret_script()" not in text
+
+def test_normalize_text():
+    assert normalize_text("PYTHON Search") == "python search"
